@@ -29,14 +29,48 @@
 	}
 </script>
 <title>My ToDo App</title>
+<style>
+	#box {
+		margin-top : 48px;
+		margin-left : auto;
+		margin-right : auto;
+		padding : 48px;
+		width : 70%;
+		background-color : #FFC107;
+		box-shadow : 5px 5px 5px 5px #F2F2F2;
+	}
+	
+	input {
+		padding : 7px;
+		margin:0;
+	}
+		
+	input[type=text] {
+		width : 80%;
+		height : 100%;
+		border : none;
+		border-radius : 3px;
+		padding-left : 12px;
+	}
+	
+	input[type=button] {
+		width : 100px;
+		height : 100%;
+		background-color : #0D6EFD;
+		border-radius : 5px;
+		color : white;
+		border : none;
+		margin-left : -10px;
+	}
+</style>
 </head>
 <body>
-	<div class="container bg-warning shadow mx-auto mt-5 p-5 w-75">
+	<div id="box">
 		<h2>My ToDo App</h2>
 		<hr>
-		<div class="input-group">
-			<input id="item" class="form-control" type="text" placeholder="할일을 입력하세요..">
-			<button type="button" class="btn btn-primary" onclick="addItem()">할일 추가</button>
+		<div class="in-line">
+			<input id="item" type="text" placeholder="할일을 입력하세요..">
+			<input type="button" onclick="addItem()" value="할일 추가">
 		</div>
 		<hr>
 		<ul id="todolist" class="list-group"></ul>

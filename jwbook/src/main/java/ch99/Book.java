@@ -53,7 +53,4 @@ public class Book {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
-	
-	
-
 }

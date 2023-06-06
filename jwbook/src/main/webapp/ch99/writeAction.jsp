@@ -31,7 +31,6 @@
 				script.println("location.href = 'bookList.jsp'");
 				script.println("</script>");
 		}
-	
 	%>
 
 </body>

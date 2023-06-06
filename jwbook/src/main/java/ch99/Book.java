@@ -8,6 +8,7 @@ public class Book {
 	private String email;
 	private String date;
 	private String content;
+	private String pw;
 	
 	
 	public int getID() {
@@ -45,6 +46,12 @@ public class Book {
 	}
 	public void setContent(String content) {
 		this.content = content;
+	}
+	public String getPw() {
+		return pw;
+	}
+	public void setPw(String pw) {
+		this.pw = pw;
 	}
 	
 	

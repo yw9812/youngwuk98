@@ -19,7 +19,7 @@
 					<tbody>
 					<tr>
 						<td>작성자</td>
-						<td><input type="text" name="name"></td>
+						<td><input type="text" name="username"></td>
 					</tr>
 					<tr>
 						<td>이메일</td>
@@ -34,7 +34,7 @@
 						<td><input type="text" name="pw"></td>
 					</tr>
 					<tr>
-						<td colspan="2"><textarea class="form-control" name="bookContent" rows="10"></textarea></td>
+						<td colspan="2"><textarea class="form-control" name="content" rows="10"></textarea></td>
 					</tr>
 					</tbody>
 				</table>

@@ -100,5 +100,20 @@ public class BookDAO {
 		} catch (Exception e) { e.printStackTrace(); }
 		return list;
 	}
+	
+	public boolean nextPage(int pageNumber) {
+		Connection conn = open();
+		String SQL = "SELECT * FROM BOOK WHERE ID < ?";
+		ArrayList<Book> list = new ArrayList<Book>();
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);
+			pstmt.setInt(1,getNext() - (pageNumber - 1) * 10);
+			ResultSet rs = pstmt.executeQuery();
+			if (rs.next()) {
+				return true;
+			}
+		} catch (Exception e) { e.printStackTrace(); }
+		return false;
+	}
 
 }
